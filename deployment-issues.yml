@@ -12,6 +12,7 @@ spec:
   template:
     metadata:
       annotations:
+        vault.hashicorp.com/agent-image: "docker.io/hashicorp/vault"
         vault.hashicorp.com/agent-inject: "true"
         vault.hashicorp.com/role: "issues"
         vault.hashicorp.com/agent-inject-secret-issues-config.txt: "secret/data/issues/config"
